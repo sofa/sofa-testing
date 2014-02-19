@@ -1,0 +1,24 @@
+{
+  "name": "sofa-testing",
+  "version": "0.1.0",
+  "homepage": "http://www.sofa.io",
+  "authors": [
+    "Pascal Precht <pascal@couchcommerce.com>"
+  ],
+  "description": "Sofa SDK Testing Components.",
+  "keywords": [
+    "sofa",
+    "sofa.io",
+    "web",
+    "sdk",
+    "testing"
+  ],
+  "license": "GPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
