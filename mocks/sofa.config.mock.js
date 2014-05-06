@@ -8,6 +8,7 @@ sofa.Config = {
     checkoutUrl:'http://couchdemoshop.couchcommerce.com/checkout/v2/',
     apiHttpMethod: 'jsonp',
     categoryJson: 'data/couchdemoshop/categories.json',
+    apiEndpoint: 'http://api.couchcommerce.com/',
     //apiUrl: 'data/dasgibtesnureinmal/products.json',
     //apiHttpMethod: 'get',
     mediaFolder:'http://cc1.couchcommerce.com/media/couchdemoshop/img/',
