@@ -1,30 +1,30 @@
 {
-  "name": "sofa-testing",
-  "version": "0.5.0",
-  "description": "Sofa SDK Testing Components.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sofa/sofa-testing"
-  },
-  "keywords": [
-    "sofa",
-    "sofa.io",
-    "web",
-    "sdk",
-    "testing"
-  ],
-  "author": "Pascal Precht <pascal@couchcommerce.com>",
-  "license": "GPL",
-  "bugs": {
-    "url": "https://github.com/sofa/sofa-testing/issues"
-  },
-  "homepage": "http://www.sofa.io",
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-deploy-semver": "^0.4.3"
-  }
+    "name": "sofa-testing",
+    "version": "0.6.0",
+    "description": "Sofa SDK Testing Components.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sofa/sofa-testing"
+    },
+    "keywords": [
+        "sofa",
+        "sofa.io",
+        "web",
+        "sdk",
+        "testing"
+    ],
+    "author": "Pascal Precht <pascal@couchcommerce.com>",
+    "license": "GPL",
+    "bugs": {
+        "url": "https://github.com/sofa/sofa-testing/issues"
+    },
+    "homepage": "http://www.sofa.io",
+    "devDependencies": {
+        "grunt": "^0.4.5",
+        "grunt-deploy-semver": "^0.4.3"
+    }
 }
