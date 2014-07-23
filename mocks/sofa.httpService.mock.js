@@ -3,10 +3,12 @@ sofa.define('sofa.mocks.httpService', function ($q) {
     'use strict';
 
     var mocks,
-        requestQueue = [];
+        requestQueue    = [],
+        requestCount    = 0,
+        responseCount   = 0;
 
     var self = function (config) {
-
+        requestCount++;
         config.method = config.method && config.method.toLowerCase();
         requestQueue.push(config);
         var deferred = $q.defer();
@@ -24,14 +26,28 @@ sofa.define('sofa.mocks.httpService', function ($q) {
                 deferred.resolve({
                     data: responseMock.data
                 });
+                responseCount++;
             }, responseMock.responseTime);
         } else if (responseMock) {
             deferred.resolve({
                 data: responseMock.data
             });
+            responseCount++;
         }
 
         return deferred.promise;
+    };
+
+    self.clearCounter = function() {
+        requestCount    = 0;
+        responseCount   = 0;
+    };
+
+    self.getCounter = function() {
+        return {
+            requestCount: requestCount,
+            responseCount: responseCount
+        };
     };
 
     self.getLastCallParams = function () {
