@@ -23,19 +23,24 @@ sofa.define('sofa.mocks.httpService', function ($q) {
 
         if (responseMock && typeof responseMock.responseTime === 'number') {
             setTimeout(function () {
-                deferred.resolve({
-                    data: responseMock.data
-                });
+                deferred.resolve(generateResponse(responseMock, configData));
                 responseCount++;
             }, responseMock.responseTime);
         } else if (responseMock) {
-            deferred.resolve({
-                data: responseMock.data
-            });
+            deferred.resolve(generateResponse(responseMock, configData));
             responseCount++;
         }
 
         return deferred.promise;
+    };
+
+    var generateResponse = function (responseMock, configData) {
+        return {
+            data: responseMock.data,
+            config: {
+                data: configData || {}
+            }
+        };
     };
 
     self.clearCounter = function() {
